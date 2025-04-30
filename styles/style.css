@@ -1,11 +1,124 @@
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/header.jpg');
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#f4e2d8;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 20px;
+    padding: 150px 20px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+}
+
+
+header h3 {
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+  header a {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 16px 32px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+}
+
+
+footer {
+    color: rgb(14, 13, 13);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 900px) {
+    header {
+        padding: 80px 20px;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    header h3 {
+        font-size: 14px;
+    }
+
+    header a {
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    header a {
+        width: 100%;
+        display: block;
+    }
 }
