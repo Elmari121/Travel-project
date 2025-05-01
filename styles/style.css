@@ -1,6 +1,8 @@
+
 * {
     box-sizing: border-box;
-}
+  }
+  
 body {
     font-family: 'Poppins', sans-serif;
     background-color:#f4e2d8;
@@ -68,21 +70,56 @@ header a:hover {
 }
 
 
-footer {
-    color: rgb(14, 13, 13);
-    text-align: center;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: left;
     padding: 20px;
-    font-size: 14px;
-}
-
-footer a {
-    color: #00bfff;
+  }
+  
+  footer {
+    color: white;
+    background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.8)), url('../images/footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+  }
+  
+  footer a {
+    color: #ece919;
     text-decoration: none;
-}
-
-footer a:hover {
+  }
+  
+  footer a:hover {
     text-decoration: underline;
-}
+  }
+  
+  footer ul {
+    padding: 0;
+  }
+  
+  footer li {
+    list-style: none;
+    margin-bottom: 8px;
+  }
+  
+  footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
 
 
 @media (max-width: 900px) {
@@ -107,18 +144,15 @@ footer a:hover {
         font-size: 12px;
     }
 }
-
-@media (max-width: 500px) {
-    header h1 {
-        font-size: 32px;
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
-    header h2 {
-        font-size: 16px;
+  
+    .footer-section {
+      max-width: 100%;
     }
-
-    header a {
-        width: 100%;
-        display: block;
-    }
-}
+  }
+  
